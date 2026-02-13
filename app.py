@@ -13,7 +13,7 @@ from datetime import datetime
 from time import sleep
 
 from yt_dlp import YoutubeDL
-from moviepy import VideoFileClip
+from moviepy.editor import VideoFileClip
 from pydub import AudioSegment
 
 load_dotenv()

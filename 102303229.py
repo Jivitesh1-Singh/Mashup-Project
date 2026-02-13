@@ -16,7 +16,7 @@ os.environ["PATH"] = ffmpeg_dir + os.pathsep + os.environ.get("PATH", "")
 
 try:
     from yt_dlp import YoutubeDL
-    from moviepy import VideoFileClip
+    from moviepy.editor import VideoFileClip
     from pydub import AudioSegment
 except Exception:
     print("Missing required packages. Run:\n  pip install yt-dlp moviepy pydub")
